@@ -1,0 +1,166 @@
+/* Base Styles */
+
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
+}
+
+img {
+    display: block;
+}
+
+/*Beginning of header command section*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.profile {
+    padding: 100px 0;
+}
+
+.profile-image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.profile-image {
+    float: left;
+    width: calc(33.333% - 2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.profile-user-settings {
+    margin-top: 20px;
+}
+
+.profile-user-name {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: solid;
+    margin: 10;
+    cursor: pointer;
+}
+
+.profile-edit-btn {
+    font-size: 18px;
+    line-height: 1.8;
+    border:1.6px solid #dbdbdb;
+    border-radius: 8px;
+    padding: 0 16px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.profile-settings-btn {
+    font-size: 26px;
+    margin-left: 16px;
+    background-color: white;
+    border:1.4px solid transparent;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+.profile-stats li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: solid;
+    line-height: 1.5;
+    margin-right: 70px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.profile-stats li:last-of-type {
+    margin-right: 2px;
+    padding-left: 0;
+}
+
+.profile-bio li {
+    display: inline-block;
+    font-weight: solid;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+.profile-bio li:last-of-type {
+    margin-top: 300px;
+    margin-right: 2px;
+    padding-left: 0;
+}
+
+/*End of header command section*/
+
+img {
+    height: 300px;
+    width: 300px;
+}
+.gallery {
+    margin-top: 50px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
+    box-sizing: border-box;
+    grid-gap: 20px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    position: relative;
+}
+
+.gallery-item:hover .gallery-item-likes {
+    display: block;
+}
+.gallery-item:hover .gallery-item-comments {
+    display: block;
+}
+
+.gallery-item-likes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.gallery-item-comments {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
